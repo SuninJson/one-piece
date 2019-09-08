@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.evan'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.slf4j:slf4j-api:1.7.25')
+    compile('org.slf4j:slf4j-log4j12:1.7.25')
+    compile('log4j:log4j:1.2.17')
+    compile('org.projectlombok:lombok')
+    runtime('mysql:mysql-connector-java')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

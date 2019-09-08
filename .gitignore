@@ -1,0 +1,38 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/gradlew
+/gradlew.bat
+gradlew
+gradlew.bat
+out/
+sen-study-juc/src/test/
+sen-study-juc/target/
+src/main/resources/static/
+src/main/resources/templates/
+src/test/
+target/generated-sources/
+out
+sen-study-juc/target/generated-sources/
